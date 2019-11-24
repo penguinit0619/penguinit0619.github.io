@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Penguinit&#39;s blog</title>
-    <link>https://example.com/posts/</link>
+    <link>https://penguinit0619.github.io/posts/</link>
     <description>Recent content in Posts on Penguinit&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Sun, 24 Nov 2019 20:53:19 +0900</lastBuildDate>
     
-	<atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://penguinit0619.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My First Post</title>
-      <link>https://example.com/2019/11/my-first-post/</link>
+      <link>https://penguinit0619.github.io/2019/11/my-first-post/</link>
       <pubDate>Sun, 24 Nov 2019 20:53:19 +0900</pubDate>
       
-      <guid>https://example.com/2019/11/my-first-post/</guid>
+      <guid>https://penguinit0619.github.io/2019/11/my-first-post/</guid>
       <description>11월 19일 메모 Docker  Docker 설치하기 (우분투)  이전에 설치한 Docker가 있다면 모두 삭제를 한다.
 1 2  #이전에 설치된 docker, docker io, docker-engine은 모두 삭제한다. sudo apt-get remove docker docker-engine docker.io containerd runc   Docker에 의존성이 있는 패키지들을 설치
 1 2 3 4 5 6  sudo apt-get install \  apt-transport-https \  ca-certificates \  curl \  gnupg-agent \  software-properties-common   Docker 공식 GPG키를 등록</description>

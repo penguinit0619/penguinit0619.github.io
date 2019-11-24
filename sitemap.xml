@@ -1,7 +1,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     
         <url>
-            <loc>https://example.com/2019/11/my-first-post/</loc>
+            <loc>https://penguinit0619.github.io/2019/11/my-first-post/</loc>
             
                 <lastmod>2019-11-24T20:53:19+09:00</lastmod>
             
@@ -15,7 +15,7 @@
         </url>
     
         <url>
-            <loc>https://example.com/</loc>
+            <loc>https://penguinit0619.github.io/</loc>
             
                 <lastmod>2019-11-24T20:53:19+09:00</lastmod>
             
@@ -29,7 +29,7 @@
         </url>
     
         <url>
-            <loc>https://example.com/posts/</loc>
+            <loc>https://penguinit0619.github.io/posts/</loc>
             
                 <lastmod>2019-11-24T20:53:19+09:00</lastmod>
             
@@ -43,7 +43,7 @@
         </url>
     
         <url>
-            <loc>https://example.com/about/</loc>
+            <loc>https://penguinit0619.github.io/about/</loc>
             
                 <lastmod>2019-08-02T11:04:49+08:00</lastmod>
             
@@ -57,7 +57,7 @@
         </url>
     
         <url>
-            <loc>https://example.com/categories/</loc>
+            <loc>https://penguinit0619.github.io/categories/</loc>
             
             
                 <changefreq>weekly</changefreq>
@@ -69,7 +69,7 @@
         </url>
     
         <url>
-            <loc>https://example.com/tags/</loc>
+            <loc>https://penguinit0619.github.io/tags/</loc>
             
             
                 <changefreq>weekly</changefreq>
