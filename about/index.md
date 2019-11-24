@@ -3,10 +3,6 @@
 
 [LoveIt :(far fa-heart):](https://github.com/dillonzq/LoveIt) is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/) developed by [Dillon](https://dillonzq.com).
 
-It is based on the original [LeaveIt Theme](https://github.com/liuzc/LeaveIt/) and [KeepIt Theme](https://github.com/liuzc/LeaveIt/).
-
-![Hugo Theme LoveIt](/images/Apple-Devices-Preview.png)
-
 ### Features
 
 #### Performance and SEO
