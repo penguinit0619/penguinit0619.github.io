@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Docker 시리즈-2 [도커 개요 및 설치] | Penguinit&#39;s blog</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noodp" />
+<meta name="Description" content="LoveIt Theme Demo">
+<link rel="prev" href="https://penguinit0619.github.io/2020/01/docker-about-01/" />
+<link rel="canonical" href="https://penguinit0619.github.io/2020/01/docker-about-02/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Docker 시리즈-2 [도커 개요 및 설치]"/>
+<meta name="twitter:description" content="Docker 구성요소 Docker의 구성요소는 아래 그림과 같다. Docker daemon(dockerd) 도커 데몬은 도커를 구성하는 이미지나 컨테이너 네트워크 볼륨등을 컨트롤 하며 도커 데몬은 다른 서비스"/>
+<script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Docker 시리즈-2 [도커 개요 및 설치]",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/penguinit0619.github.io\/2020\/01\/docker-about-02\/"
+    },
+    
+        "image": {
+            "@type": "ImageObject",
+            "url": "https:\/\/penguinit0619.github.io\/cover.png",
+            "width":  800 ,
+            "height":  600 
+        },
+    
+    "genre": "posts",
+    
+    "wordcount":  1387 ,
+    "url": "https:\/\/penguinit0619.github.io\/2020\/01\/docker-about-02\/",
+    
+        "datePublished": "2020-01-14T02:14:49\x2b09:00",
+    
+    
+        "dateModified": "2020-01-14T02:35:03\x2b09:00",
+    
+    
+        "license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.",
+    
+    
+        "publisher": {
+            "@type": "Organization",
+            "name": "XXXX",
+            "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/penguinit0619.github.io\/logo.png",
+            "width":  127 ,
+            "height":  40 
+            }
+        },
+    
+    
+    "description": ""
+    }
+    </script>
+<link rel="stylesheet" href="/css/style.min.css">
+<link rel="stylesheet" href="/css/lib/fontawesome-free/all.min.min.css">
+
+<link rel="stylesheet" href="/css/lib/animate/animate.min.min.css">
+
+    </head>
+    <body>
+        <script>
+            window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            window.isDark && document.body.classList.add('dark-theme');
+        </script>
+        <div class="wrapper">
+            <nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-header animated bounceIn">
+            <a href="https://penguinit0619.github.io/">Penguinit&#39;s blog</a>
+        </div>
+        <div class="navbar-menu">
+            
+            
+                <a class="menu-item" href="https://penguinit0619.github.io/posts" title="">Posts</a>
+            
+                <a class="menu-item" href="https://penguinit0619.github.io/tags" title="">Tags</a>
+            
+                <a class="menu-item" href="https://penguinit0619.github.io/categories" title="">Categories</a>
+            
+                <a class="menu-item" href="https://penguinit0619.github.io/about" title="">About</a>
+            
+            <a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust fa-rotate-180 fa-fw"></i></a>
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile">
+     <div class="navbar-container">
+        <div class="navbar-header">
+            <div class="navbar-header-title animated bounceIn">
+                <a href="https://penguinit0619.github.io/">Penguinit&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="navbar-menu" id="mobile-menu">
+            
+            
+                <a class="menu-item" href="https://penguinit0619.github.io/posts" title="">Posts</a>
+            
+                <a class="menu-item" href="https://penguinit0619.github.io/tags" title="">Tags</a>
+            
+                <a class="menu-item" href="https://penguinit0619.github.io/categories" title="">Categories</a>
+            
+                <a class="menu-item" href="https://penguinit0619.github.io/about" title="">About</a>
+            
+            <a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust fa-rotate-180 fa-fw"></i></a>
+        </div>
+    </div>
+</nav><main class="main">
+                <div class="container">
+                    
+    
+    
+    
+
+    <article class="post-warp">
+        <h1 class="post-title animated flipInX">Docker 시리즈-2 [도커 개요 및 설치]</h1>
+
+        <div class="post-meta">
+            <div class="post-meta-main">
+                <a class="author" href="https://penguinit0619.github.io/" rel="author"><i class="fas fa-user-circle fa-fw"></i>Jinyong Kim&nbsp;</a>
+                
+            </div>
+            <div class="post-meta-other">
+                <i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-01-14>2020-01-14</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;</div>
+        </div>
+
+        
+
+        
+
+        <div class="post-content">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+<a class="post-dummy-target" id="docker-구성요소"></a><h4>Docker 구성요소</h4>
+
+<p>Docker의 구성요소는 아래 그림과 같다.</p>
+
+<p><figure><img src=/images/loading.svg data-sizes=auto data-src=https://docs.docker.com/engine/images/architecture.svg alt=Docker Architecture Diagram class=lazyload></figure></p>
+
+<a class="post-dummy-target" id="docker-daemon-dockerd"></a><h4>Docker daemon(dockerd)</h4>
+
+<p>도커 데몬은 도커를 구성하는 이미지나 컨테이너 네트워크 볼륨등을 컨트롤 하며 도커 데몬은 다른 서비스에 떠있는 데몬들과도 통신을 할 수 있다.</p>
+
+<a class="post-dummy-target" id="docker-client-docker"></a><h4>Docker client(docker)</h4>
+
+<p>도커 클라이언트는 보통 도커를 이용하는 유저들이 도커와 상호작용하기위한 주된 도구이다. 도커의 특정 명령어를 실행하면 클라이언트는 도커 데몬으로 명령어를 보낸다. 이때 docker API를 사용하며 도커 클라이언트는 복수의 도커 데몬과 통신할 수 있다.</p>
+
+<a class="post-dummy-target" id="docker-registries"></a><h4>Docker registries</h4>
+
+<p>도커 레지스트리는 간단하게 말하면 도커의 이미지를 저장하는 곳이다. 그 중 도커 허브(Docker hub)가 가장 대표적인데 Public한 레지스트리로 누구나 사용할 수 있으며 별다른 설정이 없다면 기본 레지스트리는 도커 허브로 지정된다.</p>
+
+<a class="post-dummy-target" id="image"></a><h4>Image</h4>
+
+<p>이미지는 도커컨테이너를 만들기 위한 오직 읽기만 가능한 템플릿이다. 종종 이미지는 다른 이미지의 베이스 이미지가 되기도하는데 예를 들어 우분투를 이미지로 사용한다고 했을 때 이곳에 만약 아파치 서버나 다른 파일들이 설치가 되어야 한다면 이런 필요로 하는 것들이 설치된 이미지를 우분투를 베이스 이미지로 하여 새로운 이미지를 만들 수 있다.</p>
+
+<p>아마도 이미지를 사용할 때는 누군가가 만들어 놓은 이미지를 사용할 수 도 있고 필요에 따라 자신만의 이미지를 만들어야 할 수도 있다. 이때 <code>Dockerfile</code>에 심플한 문법을 통해서 이미지를 만들 수도 있는데 이때 Dockerfile내의 각각 코드들은 이미지의 레이어(Layer)가 된다.</p>
+
+<p>만약 어떤 변경이 일어 났을 때 변경이 일어난 레이어만 변경이 되는데 이러한 특성때문에 이미지를 만드는데 있어서 기존 VM환경과 비교하여 아주 가볍고 빠르게 만든다.</p>
+
+<a class="post-dummy-target" id="containers"></a><h4>Containers</h4>
+
+<p>컨테이너는 이미지의 실행가능한 인스턴스 단위인데 docker api나 cli를 통해서 생성,시작, 중지, 삭제등을 명령할 수 있고 복수개의 네트워크를 붙일 수 도 있고 볼륨을 땟다 붙였다 할 수도 있으며 심지어 현재의 상태에서 새로운 이미지를 만들 수도 있다.</p>
+
+<p>기본 설정으로 컨테이너는 호스트 머신으로 부터 고립되어(isolate) 있는데 설정에 따라서 네트워크나 스토리지등을 어느레벨까지 고립을 할 것인지를 정할 수 있다.</p>
+
+<p>컨테이너는 이미지에 모든 것이 정의가 되어있으며 컨테이너가 삭제되면 그동안 안에 있었던 모든 변경설정들이 저장되지 않고 휘발되어 사라진다.</p>
+
+<p><u>그럼 여기까지 Docker의 구성요소에 대해서 알아보았으니 본격적으로 Docker를 설치해보려고 한다. 현재 노트북이 우분투기반 노트북이라 우분투를 기준으로 Docker 설치를 해보려고한다.</u></p>
+
+<a class="post-dummy-target" id="이전에-설치한-docker가-있다면-모두-삭제를-한다"></a><h5>이전에 설치한 Docker가 있다면 모두 삭제를 한다.</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#이전에 설치된 docker, docker io, docker-engine은 모두 삭제한다.</span>
+sudo apt-get remove docker docker-engine docker.io containerd runc</code></pre></td></tr></table>
+</div>
+</div>
+<a class="post-dummy-target" id="docker에-의존성이-있는-패키지들을-설치"></a><h5>Docker에 의존성이 있는 패키지들을 설치</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get install <span class="se">\
+</span><span class="se"></span>    apt-transport-https <span class="se">\
+</span><span class="se"></span>    ca-certificates <span class="se">\
+</span><span class="se"></span>    curl <span class="se">\
+</span><span class="se"></span>    gnupg-agent <span class="se">\
+</span><span class="se"></span>    software-properties-common</code></pre></td></tr></table>
+</div>
+</div>
+<a class="post-dummy-target" id="docker-공식-gpg키를-등록"></a><h5>Docker 공식 GPG키를 등록</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">curl -fsSL https://download.docker.com/linux/ubuntu/gpg <span class="p">|</span> sudo apt-key add -</code></pre></td></tr></table>
+</div>
+</div>
+<a class="post-dummy-target" id="ubuntu-버전에-맞는-repository를-추가"></a><h5>Ubuntu 버전에 맞는 Repository를 추가</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo add-apt-repository <span class="se">\
+</span><span class="se"></span>   <span class="s2">&#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+</span><span class="s2">   </span><span class="k">$(</span>lsb_release -cs<span class="k">)</span><span class="s2"> \
+</span><span class="s2">   stable&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<a class="post-dummy-target" id="apt-패키지를-업데이트-해준다-추가한-repository의-반영을-위해서"></a><h5>APT 패키지를 업데이트 해준다. (추가한 Repository의 반영을 위해서)</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get update</code></pre></td></tr></table>
+</div>
+</div>
+<a class="post-dummy-target" id="최신버전의-docker를-설치"></a><h5>최신버전의 Docker를 설치</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get install docker-ce docker-ce-cli containerd.io</code></pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>만약에 특정 버전의 Docker를 설치하고 싶다면?</p>
+</blockquote>
+
+<a class="post-dummy-target" id="특정버전의-docker를-설치"></a><h5>특정버전의 Docker를 설치</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">apt-cache madison docker-ce
+ docker-ce <span class="p">|</span> <span class="m">5</span>:19.03.5~3-0~ubuntu-bionic <span class="p">|</span> https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
+ docker-ce <span class="p">|</span> <span class="m">5</span>:19.03.4~3-0~ubuntu-bionic <span class="p">|</span> https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
+ docker-ce <span class="p">|</span> <span class="m">5</span>:19.03.3~3-0~ubuntu-bionic <span class="p">|</span> https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
+ docker-ce <span class="p">|</span> <span class="m">5</span>:19.03.2~3-0~ubuntu-bionic <span class="p">|</span> https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
+...
+
+sudo apt-get install docker-ce<span class="o">=</span>&lt;VERSION_STRING&gt; docker-ce-cli<span class="o">=</span>&lt;VERSION_STRING&gt; containerd.io</code></pre></td></tr></table>
+</div>
+</div>
+<p><u>만약 <strong>5:19.03.5~3-0~ubuntu-bionic</strong> 버전의 우분투를 설치하고 싶다면 명령어는 아래와 같이 타이핑 할 수 있다.</u></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get install docker-ce<span class="o">=</span><span class="m">5</span>:19.03.5~3-0~ubuntu-bionic docker-ce-cli<span class="o">=</span><span class="m">5</span>:19.03.5~3-0~ubuntu-bionic containerd.io</code></pre></td></tr></table>
+</div>
+</div>
+<a class="post-dummy-target" id="설치확인"></a><h5>설치확인</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+....</code></pre></td></tr></table>
+</div>
+</div>
+<p>Docker도 설치하였고 다음 시리즈에는 <code>Docker client</code>의 명령어에 대해서 조금 깊게 포스팅 해보려고한다.</p>
+
+        </div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+		
+            </div>
+            <div class="post-info-license">
+                
+            </div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md">
+                
+                    
+                        <span><a class="link-to-markdown" href="https://penguinit0619.github.io/2020/01/docker-about-02/index.md" target="_blank"></a></span>
+                    
+                
+            </div>
+            <div class="post-info-share">
+                
+                    <span>
+    
+    
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpenguinit0619.github.io%2f2020%2f01%2fdocker-about-02%2f" target="_blank" title="Share on Facebook">
+            <i class="fab fa-facebook-square fa-fw"></i>
+        </a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</span>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section>
+            
+        </section>
+        <section>
+            <span><a href="javascript:window.history.back();"></a></span>&nbsp;|&nbsp;<span><a href="https://penguinit0619.github.io/"></a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+            <a href="https://penguinit0619.github.io/2020/01/docker-about-01/" class="prev" rel="prev" title="Docker 시리즈-1 [컨테이너란 무엇인가]"><i class="fas fa-angle-left fa-fw"></i>Docker 시리즈-1 [컨테이너란 무엇인가]</a>
+        
+        
+    </div>
+</div>
+
+
+        <div class="post-comment">
+	    <script src="https://utteranc.es/client.js" repo="penguinit0619/blog-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async> </script>
+            
+        </div>
+    </article></div>
+            </main>
+            <footer class="footer">
+    <div class="copyright">
+        <div class="copyright-line">
+            <i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://penguinit0619.github.io/">Jinyong Kim</a></span><span class="license">&nbsp;|&nbsp;<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+    </div>
+</footer>
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+
+
+    
+    
+
+
+<script src="/js/lib/jquery/jquery.slim.min.min.js"></script>
+<script src="/js/lib/lazysizes/lazysizes.min.min.js"></script>
+<script src="/js/lib/smooth-scroll/smooth-scroll.polyfills.min.min.js"></script><script>window.scroll = new SmoothScroll('[data-scroll]', {speed: 300, speedAsDuration: true});</script>
+
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+<script src="/js/blog.min.js"></script>
+
+
+    
+</div>
+        <a href="#" class="dynamic-to-top" id="dynamic-to-top" data-scroll><span>&nbsp;</span></a>
+    </body>
+</html>
