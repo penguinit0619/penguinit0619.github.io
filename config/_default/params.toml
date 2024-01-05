@@ -6,17 +6,23 @@ subtitle = "Example site for hugo-theme-tailwind"
 # the list of set content will show up on your index page (baseurl).
 contentTypeName = "post"
 
+# Show table of contents at the top of your posts (defaults to false)
+# Alternatively, add this param to post front matter for specific posts
+toc = true
+
+showReadingTime = false
+
 [header]
-  logo = "logo.webp"
+  logo = "penguin.jpeg"
 
 [footer]
-  since = 2022
-  poweredby = true
+  since = 2024
+  poweredby = false
 
 # giscus is comments system powered by GitHub Discussions
 # generate configurations from https://giscus.app/
 [giscus]
-  enabled = true
+  enabled = false
   repo = "tomowang/hugo-theme-tailwind"
   repoID = "R_kgDOKjVJHA"
   category = "Announcements"
@@ -33,16 +39,16 @@ contentTypeName = "post"
     enabled = true
     title = 'Facebook'
     icon = 'brand-facebook'
-    link = 'https://www.facebook.com/'
+    link = 'https://www.facebook.com/penguinit'
 
   [[social_media.items]]
-    enabled = true
+    enabled = false
     title = 'Twitter'
     icon = 'brand-x'
     link = 'https://twitter.com/__PurPleFoX__'
 
   [[social_media.items]]
-    enabled = true
+    enabled = false
     title = 'Instagram'
     icon = 'brand-instagram'
     link = 'https://www.instagram.com/'
@@ -51,10 +57,10 @@ contentTypeName = "post"
     enabled = true
     title = 'LinkedIn'
     icon = 'brand-linkedin'
-    link = 'https://www.linkedin.com/'
+    link = 'https://www.linkedin.com/in/kim-jinyong-80948b11b/'
 
   [[social_media.items]]
     enabled = true
     title = 'Github'
     icon = 'brand-github'
-    link = 'https://github.com/tomowang'
+    link = 'https://github.com/penguinit0619'
