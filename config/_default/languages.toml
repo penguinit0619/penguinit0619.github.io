@@ -1,8 +1,26 @@
+[kr]
+  languageCode = 'kr'
+  languageDirection = 'ltr'
+  languageName = '한국어'
+  weight = 1
+  [kr.menu]
+  [[kr.menu.main]]
+    identifier = "post"
+    name = "Post"
+    pageRef = "post"
+    weight = 10
+
+  [[kr.menu.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "about"
+    weight = 20
+
 [en]
   languageCode = 'en-US'
   languageDirection = 'ltr'
   languageName = 'English'
-  weight = 1
+  weight = 2
   [en.menu]
   [[en.menu.main]]
     identifier = "post"
@@ -11,8 +29,7 @@
     weight = 10
 
   [[en.menu.main]]
-    identifier = "about"
+    identifier = "about.en"
     name = "About"
     pageRef = "about"
     weight = 20
-

@@ -1,0 +1,28 @@
+table_of_contents = "목차"
+open_main_menu = "Open main menu"
+open_lang_switcher = "Open language switcher"
+[reading_time]
+  one = "1분전에 읽음"
+  other = "{{ .Count }}분전에 읽음"
+
+[header]
+darkmode_toggle = "다크모드로 전환"
+
+[404]
+go_back_home = "홈으로 돌아가기"
+sorry = "죄송합니다. 해당 페이지는 찾을 수 없습니다"
+page_not_found = "죄송합니다. 해당 페이지는 찾을 수 없습니다"
+
+[footer]
+powered_by = "Powered by {{ .Generator }} {{ .Heart }} {{ .Theme }}"
+copyright_with_since ="{{ .CopyrightSign }} {{ .SinceYear }} - {{ .CurrentYear}} {{ .Copyright }}"
+copyright_wo_since ="{{ .CopyrightSign }} {{ .CurrentYear}} {{ .Copyright }}"
+
+[paginator]
+newer_posts = "새로운 게시글"
+older_posts = "예전 게시글"
+
+[taxonomies]
+categories = "카테고리"
+tags = "태그"
+series = "시리즈"

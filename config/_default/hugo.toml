@@ -3,8 +3,8 @@ title = "Penguin IT 블로그"
 author = "Jinyong Kim"
 copyright = "Jinyong Kim"
 paginate = 4 # for demonstration of pagination
-languageCode = "en"
-defaultContentLanguage = "en"
+languageCode = "kr"
+defaultContentLanguage = "kr"
 enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
