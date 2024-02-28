@@ -2,6 +2,7 @@
 author = "penguinit"
 title = "히어닥(heredoc) 구문이란 무엇인가?"
 date = "2024-02-27"
+images = ["images/Untitled.png"]
 description = "오늘 포스팅에서는 히어닥(heredoc) 구문에 대해서 알아보려고 합니다. 개발하면서 일상적으로 좀 더 깔끔하게 작성하기 위해 많이 사용하던 편이었는데 이런 구문을 히어닥(heredoc)이라고 부른다는 것을 최근에 알아서 정리를 해보려고합니다."
 tags = [
 "heredoc", "golang", "python", "ruby", "php", "bash", "javascript", "java", "go"

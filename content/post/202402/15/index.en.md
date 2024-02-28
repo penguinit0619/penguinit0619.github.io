@@ -2,6 +2,7 @@
 author = "penguinit"
 title = "Find out which port is being used by Ubuntu"
 date = "2024-02-28"
+images = ["images/Untitled.png"]
 description = "If you're running an Ubuntu or Linux-based server, you may find yourself shutting down with ports open, either by mistake or for unknown reasons. I'm sure you've experienced the problem of trying to restart your server only to find that the ports are already occupied. In this post, I'll show you how to check the ports you're using."
 tags = [
 "netstat", "ss", "lsof"

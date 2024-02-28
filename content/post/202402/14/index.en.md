@@ -2,6 +2,7 @@
 author = "penguinit"
 title = "What is the heredoc syntax?"
 date = "2024-02-27"
+images = ["images/Untitled.png"]
 description = "In today's post, we're going to talk about the heredoc syntax. I've been using it a lot in my day-to-day development to make my writing cleaner, but I recently realized that it's called a heredoc, so I thought I'd clean it up."
 tags = [
 "heredoc", "golang", "python", "ruby", "php", "bash", "javascript", "java", "go"
