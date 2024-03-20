@@ -169,5 +169,3 @@ To proactively prevent XSS attacks, you can consider several methods.
 XSS attacks can be attempted in various ways besides the examples above. Attack scripts can be placed in specific fields stored in the DB, or if you have a feature that outputs the user's input as it is, you can perform unwanted scripts directly without considering the above XSS attacks.
 
 In this post, we've discussed what XSS is and how it can be attacked using a simple Golang example.
-
-Translated with DeepL.com (free version)
