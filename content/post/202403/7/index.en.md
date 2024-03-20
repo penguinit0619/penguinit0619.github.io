@@ -52,7 +52,7 @@ The last `0242ac120002` node entry represents the Mac address of the network int
 2. **Privacy concerns:** Because it contains information from a physical device, such as the MAC address, it can be a privacy concern.
 3. **Potential for time-based collisions:** Although very rare, if multiple UUIDs are generated at the same time and the clock sequence is not properly managed, there is a possibility of collisions.
 
-### UUIDv2
+## UUIDv2
 
 UUIDv2 is a version that is rarely used today for security reasons. There is a detailed article on why the UUIDv2 version has been deprecated and what's weird about it at the link below. I'll try to summarize that article later if I have time.
 
