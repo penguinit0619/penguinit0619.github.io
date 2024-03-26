@@ -1,6 +1,6 @@
 +++
 author = "penguinit"
-title = "Getting to know SQLite Soul, part 1"
+title = "Learn about SQLite Soul Part 1"
 date = "2024-03-24"
 description = "I was looking at geeknews and saw an interesting open source project called SQLite Soul, so I thought I'd give it a try and post about it. It's a bit hands-on, so I'm splitting it into two posts because it can get long."
 tags = [
@@ -12,6 +12,14 @@ categories = [
 +++
 
 ![Untitled](images/Untitled.png)
+
+<div class="callout-box">
+  <span class="callout-icon">💡</span>
+  <div class="callout-content">
+    <p>Related Series</p>
+    <p><a href="/en/post/202403/11/">✅ Learn about SQLite Soul Part 2</a></p>
+  </div>
+</div>
 
 ## Overview
 
@@ -52,7 +60,7 @@ sudo apt install sqlite3
 
 ```bash
 brew install node
-```bash brew install node
+```
 
 - Install on Linux (Debian)
 
@@ -65,7 +73,7 @@ sudo apt-get install -y nodejs
 
 - Verify node installation
 
-``` bash
+```bash
 node --version
 > v21.7.1
 ```
@@ -93,21 +101,21 @@ If the installation is successful, you can see the output like below when you en
 Usage: soul [options]
 
 Options:
-            --version Show version number [boolean]
-  -d, --database SQLite database file or :memory:                    [string] [required]
-  -p, --port Port to listen on [number]
-  -r, --rate-limit-enabled Enable rate limiting [boolean].
-  -c, --cors CORS whitelist origins [string]
-  -a, --auth Enable authentication and authorization [boolean]
+            --version                         Show version number                                [boolean]
+  -d,       --database                        SQLite database file or :memory:                   [string] [required]
+  -p,       --port                            Port to listen on                                  [number]
+  -r,       --rate-limit-enabled              Enable rate limiting                               [boolean]
+  -c,       --cors                            CORS whitelist origins                             [string]
+  -a,       --auth                            Enable authentication and authorization            [boolean]
 
-  --iuu, --initialuserusername Initial user username [string]
-  --iup, --initialuserpassword Initial user password [string]
+  --iuu,     --initialuserusername             Initial user username                              [string]
+  --iup,     --initialuserpassword             Initial user password                              [string]
 
-  --ts, --tokensecret Token Secret [string]
-  --atet, --accesstokenexpirationtime Access Token Expiration Time (Default: 5H) [string]
-  --rtet, --refreshtokenexpirationtime Refresh Token Expiration Time (Default: 1D) [string] [string] --rtet, --refreshtokenexpirationtime Refresh Token Expiration Time (Default: 1D) [string] [string
-  -S, --studio Start Soul Studio in parallel
-  --help Show help
+  --ts,      --tokensecret                     Token Secret                                       [string]
+  --atet,    --accesstokenexpirationtime       Access Token Expiration Time    (Default: 5H)      [string]
+  --rtet,    --refreshtokenexpirationtime      Refresh Token Expiration Time   (Default: 1D)      [string]
+  -S,       --studio                          Start Soul Studio in parallel
+  --help                                      Show help
 ```
 
 ## Prepare SQLite data

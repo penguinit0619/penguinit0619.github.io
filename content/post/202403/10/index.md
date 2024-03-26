@@ -13,6 +13,14 @@ categories = [
 
 ![Untitled](images/Untitled.png)
 
+<div class="callout-box">
+  <span class="callout-icon">💡</span>
+  <div class="callout-content">
+    <p>관련 시리즈</p>
+    <p><a href="/en/post/202403/11/">✅ SQLite Soul에 대해서 알아보기 2편</a></p>
+  </div>
+</div>
+
 ## 개요
 
 geeknews를 보다가 SQLite Soul이라는 재미있는 오픈소스 프로젝트가 있어서 한번 직접 실습해 보고 해당 내용을 포스팅해보려고 합니다. 실습 위주다 보니 글이 길어질 수 있는 부분이 있어서 2개의 글로 나누어서 작성합니다.
@@ -93,21 +101,21 @@ sqlite3 --version
 Usage: soul [options]
 
 Options:
-            --version                               Show version number                                 [boolean]
-  -d,       --database                              SQLite database file or :memory:                    [string] [required]
-  -p,       --port                                  Port to listen on                                   [number]
-  -r,       --rate-limit-enabled                    Enable rate limiting                                [boolean]
-  -c,       --cors                                  CORS whitelist origins                              [string]
-  -a,       --auth                                  Enable authentication and authorization             [boolean]
+            --version                         Show version number                                 [boolean]
+  -d,       --database                        SQLite database file or :memory:                    [string] [required]
+  -p,       --port                            Port to listen on                                   [number]
+  -r,       --rate-limit-enabled              Enable rate limiting                                [boolean]
+  -c,       --cors                            CORS whitelist origins                              [string]
+  -a,       --auth                            Enable authentication and authorization             [boolean]
 
-  --iuu,     --initialuserusername                   Initial user username                               [string]
-  --iup,     --initialuserpassword                   Initial user password                               [string]
+  --iuu,     --initialuserusername             Initial user username                               [string]
+  --iup,     --initialuserpassword             Initial user password                               [string]
 
-  --ts,      --tokensecret                           Token Secret                                        [string]
-  --atet,    --accesstokenexpirationtime             Access Token Expiration Time    (Default: 5H)       [string]
-  --rtet,    --refreshtokenexpirationtime            Refresh Token Expiration Time   (Default: 1D)       [string]
-  -S,       --studio                                Start Soul Studio in parallel
-  --help                                            Show help
+  --ts,      --tokensecret                     Token Secret                                        [string]
+  --atet,    --accesstokenexpirationtime       Access Token Expiration Time    (Default: 5H)       [string]
+  --rtet,    --refreshtokenexpirationtime      Refresh Token Expiration Time   (Default: 1D)       [string]
+  -S,       --studio                          Start Soul Studio in parallel
+  --help                                      Show help
 ```
 
 ## SQLite 데이터 준비
