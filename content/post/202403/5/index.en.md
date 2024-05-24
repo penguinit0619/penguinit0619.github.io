@@ -129,7 +129,7 @@ func serveContent(w http.ResponseWriter, r *http.Request) {
 <body>
     <h1>Hello, CSP!</h1>
     <script src="https://example.com/script.js"></script>
-    <img src="https://example.com/image.png" alt="Example Image">
+    <img src="https://example.com/images.png" alt="Example Image">
 </body>
 </html>
 `
@@ -173,7 +173,7 @@ func serveContent(w http.ResponseWriter, r *http.Request) {
 <body>
     <h1>Hello, CSP!</h1>
     <script src="https://trusted.com/script.js"></script>
-    <img src="https://trusted.com/image.png" alt="Trusted Image">
+    <img src="https://trusted.com/images.png" alt="Trusted Image">
 </body>
 </html>
 `
