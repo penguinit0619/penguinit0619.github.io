@@ -41,3 +41,8 @@ Skew가 발생하면 특정 브로커에 파티션이 몰리는 현상으로 인
 
 ## 정리
 오늘 포스팅에서는 Kafka에서 Skew란 무엇을 의마히는지와 Skew가 발생했을 때 어떻게 해결하는지에 대해서 알아보았습니다. Skew가 발생하면 처리량이 감소할 수 있기 때문에 주기적으로 모니터링을 해서 Skew가 발생하지 않도록 관리하는 것이 중요합니다. 해당 내용이 도움이 되었으면 좋겠습니다.
+
+---
+> 참고자료
+
+- [[Kafka] 파티션 Skew, Leader Skew 그리고 Reassign Partition](https://louisdev.tistory.com/14)
