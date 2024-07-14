@@ -13,10 +13,8 @@ theme = "tailwind"
 enableRobotsTXT = true
 
 [markup]
-  _merge = "deep"
-
   [markup.highlight]
-      anchorLineNos = false
+      anchorLineNos = true
       codeFences = true
       guessSyntax = false
       hl_Lines = ''
@@ -24,11 +22,11 @@ enableRobotsTXT = true
       lineAnchors = ''
       lineNoStart = 1
       lineNos = true
-      lineNumbersInTable = true
+      lineNumbersInTable = false
       noClasses = true
-      noHl = true
-      style = 'onedark'
-      tabWidth = 4
+      noHl = false
+      tabWidth = 2
+      style = "monokai"
 
 [taxonomies]
 category = "categories"
