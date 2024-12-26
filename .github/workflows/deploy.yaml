@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install hugo
-        run: sudo snap install hugo
+        run: sudo snap install hugo --channel=v0.123/stable
 
       - name: Checkout
         uses: actions/checkout@v3
