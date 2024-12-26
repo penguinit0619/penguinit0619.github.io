@@ -33,8 +33,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install hugo
-        run: sudo snap install hugo --channel=v0.123/stable
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.123.7'
 
       - name: Checkout
         uses: actions/checkout@v3
