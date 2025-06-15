@@ -4,7 +4,7 @@ title = "검색 시장의 판이 바뀌고 있다: 키워드에서 응답 중심
 date = "2025-06-14"
 description = "AI 검색 시대의 새로운 최적화 전략 AEO, GEO, LLMO에 대해 알아보고 실전 적용 방법을 제시합니다."
 tags = [
-"AEO", "GEO", "LLMO", "AI-search", "optimization"
+"AEO", "GEO", "LLMO"
 ]
 categories = [
 "marketing", "seo"

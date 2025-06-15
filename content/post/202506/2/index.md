@@ -4,7 +4,7 @@ title = "AEO 실전 가이드: 질문-중심 콘텐츠 설계부터 구조화 �
 date = "2025-06-15"
 description = "AEO의 기본 개념부터 실제 적용을 위한 단계별 전략, 그리고 성과 측정 방법까지 자세히 살펴보는 실전 가이드입니다."
 tags = [
-"AEO", "answer-engine-optimization", "structured-data", "GEO", "LLMO"
+"AEO", "GEO", "LLMO"
 ]
 categories = [
 "marketing", "seo"
