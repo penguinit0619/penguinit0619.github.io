@@ -10,6 +10,12 @@
     pageRef = "post"
     weight = 10
 
+  [[kr.menu.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "about"
+    weight = 20
+
 [en]
   languageCode = 'en-US'
   languageDirection = 'ltr'
@@ -21,3 +27,9 @@
     name = "Post"
     pageRef = "post"
     weight = 10
+
+  [[en.menu.main]]
+    identifier = "about.en"
+    name = "About"
+    pageRef = "about"
+    weight = 20
