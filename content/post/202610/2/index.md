@@ -136,4 +136,9 @@ Search Console 커뮤니티에서 받은 답변 중 하나가 정확히 그 얘�
 
 측정 대상 사이트는 [withuse.io](https://withuse.io)이고,
 위에서 URL 검사 결과를 옮긴 페이지는
-[cron 표현식 가이드](https://cron.withuse.io/cron-every-5-minutes/)다.
+[cron 표현식 가이드](https://withuse.io/cron/cron-every-5-minutes/)다.
+
+> **2026-10-13 덧붙임.** 이 글을 쓴 뒤 사이트 구조를 바꿨다. 도구마다 서브도메인을
+> 쓰던 것을 `withuse.io` 하위 경로로 합치고 옛 주소는 301로 넘겼다. 색인된 4개 중
+> 3개가 한 서브도메인에 몰려 있었고 나머지 네 호스트는 색인이 0개였기 때문이다.
+> 위 링크도 새 주소로 바꿔 적었다. 효과는 11월 중순에 같이 적겠다.
