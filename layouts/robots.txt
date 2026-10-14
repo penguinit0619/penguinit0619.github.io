@@ -1,3 +1,9 @@
 User-agent: *
+Allow: /
+
+{{/* The sitemap index was being served but never declared here, so the only
+     way a crawler learned about it was a manual Search Console submission.
+     Hugo builds the URL from baseURL, so this follows the site if it moves. */}}
+Sitemap: {{ "sitemap.xml" | absURL }}
 
 #DaumWebMasterTool:dca50d15cee286e46645f199be54408e45e4979ecbf867fa7877a90a881be4fd:/lJDYpNEQ78RnQXN/HqAlA==
